@@ -1,0 +1,73 @@
+.dados{
+    width: 100%;
+    height: 290px;
+    /* background: sandybrown; */
+    background: black;
+    padding-top: 130px !important;
+    text-align: center;
+    margin: auto;
+    
+}
+.dado{
+    display: inline-block;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+h1{
+    font-size: 30px;
+    font-family: cursive;
+    font-weight: bold;
+    margin-top: 0%;
+    text-align: center;
+    display: block;
+    color: white;
+}
+button{
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    background: grey;
+    color: whitesmoke;
+    font-weight: bold;
+    border-radius: 11px;
+    border: none;
+    font-family: cursive;
+}
+button:hover{
+    
+    background: #ccc;
+    color: grey;
+    font-weight: bold;
+    font-family: cursive;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 11px;
+    border: none;
+}
+button:active{
+    background: rgb(110, 110, 212);
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: cursive;
+    width: 80px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 11px;
+    border: none;
+    text-shadow: 2px 2px 2px black;
+}
+body{
+    margin-top: 0%;
+    padding: 0px;
+    background: rgb(0, 0, 94);
+}
+p{
+    color: whitesmoke;
+}
+img{
+    border-radius: 16px;
+}
