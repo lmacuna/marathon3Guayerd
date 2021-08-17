@@ -7,6 +7,7 @@ let gene = 700;
 let na = 100;
 console.log("Inicial: " + total);
 document.querySelector("#inicio").innerHTML='<p style="font-family:cursive;font-weight:bold;font-size:25px;margin-top:0px;color:whitesmoke">'+`Inicial | ${total}`+'</p>'
+document.querySelector("#tipojugada1").innerHTML='<p>'+"A JUGAR"+'</p>'
 
 const jugar=()=>{
   if(seguir===true&&total!==0){
@@ -170,6 +171,7 @@ switch(n5){
 
   if (full && poker == false && generala == false) {
     total = total + fulll;
+    document.querySelector("#tipojugada1").innerHTML='<p>'+"HICISTE FULL"+'</p>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`FULL | ${fulll}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","full");
     document.querySelector("#tablero").classList.replace("escalera","full")
@@ -184,6 +186,7 @@ switch(n5){
     document.querySelector("#tablero").classList.replace("full","poker")
     document.querySelector("#tablero").classList.replace("escalera","poker")
     document.querySelector("#tablero").classList.replace("generala","poker")
+    document.querySelector("#tipojugada1").innerHTML='<p>'+"HICISTE POKER"+'</p>'
    // alert("\n poker " + pokerr);
   }
   if (generala) {
@@ -193,6 +196,7 @@ switch(n5){
     document.querySelector("#tablero").classList.replace("full","generala")
     document.querySelector("#tablero").classList.replace("escalera","generala")
     document.querySelector("#tablero").classList.replace("poker","generala")
+    document.querySelector("#tipojugada1").innerHTML='<p>'+"HICISTE GENERALA"+'</p>'
    // alert("\n generala " + gene);
   }
   if (escalera && full == false && poker == false && generala == false) {
@@ -202,6 +206,7 @@ switch(n5){
     document.querySelector("#tablero").classList.replace("full","escalera")
     document.querySelector("#tablero").classList.replace("poker","escalera")
     document.querySelector("#tablero").classList.replace("generala","escalera")
+    document.querySelector("#tipojugada1").innerHTML='<p>'+"HICISTE ESCALERA"+'</p>'
    // alert("\n escalera " + esca);
   }
   if (full == false && poker == false && generala == false && escalera == false) {
@@ -211,6 +216,7 @@ switch(n5){
     document.querySelector("#tablero").classList.replace("escalera","dados")
     document.querySelector("#tablero").classList.replace("poker","dados")
     document.querySelector("#tablero").classList.replace("generala","dados")
+    document.querySelector("#tipojugada1").innerHTML='<p>'+"NADA"+'</p>'
     //alert("\nNada -" + na + "\n");
     if(total===0){
       seguir=false;
@@ -232,6 +238,7 @@ const otravez=()=>{
   document.querySelector("#denuevo").innerHTML=""
   document.querySelector("#tipoJugada").innerHTML=""
   document.querySelector("#subtotal").innerHTML=""
+  document.querySelector("#tipojugada1").innerHTML='<p>'+"A JUGAR"+'</p>'
   seguir=true;
   total=500;
  
