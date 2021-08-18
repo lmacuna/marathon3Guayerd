@@ -69,11 +69,11 @@ h1{
     display: block;
     color: white;
 }
-button{
+button:active{
     width: 80px;
     height: 50px;
     font-size: 20px;
-    background: grey;
+    background: lightgrey;
     color: whitesmoke;
     font-weight: bold;
     border-radius: 11px;
@@ -92,7 +92,7 @@ button:hover{
     border-radius: 11px;
     border: none;
 }
-button:active{
+button{
     background: rgb(110, 110, 212);
     color: whitesmoke;
     font-weight: bold;
@@ -104,7 +104,7 @@ button:active{
     border: none;
     text-shadow: 2px 2px 2px black;
 }
-body{
+.body{
     margin-top: 0%;
     padding: 0px;
     background: rgb(0, 0, 94);
@@ -114,4 +114,8 @@ p{
 }
 img{
     border-radius: 16px;
+}
+.perder {
+    background: gray;
+    opacity: 0.7;
 }

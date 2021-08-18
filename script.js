@@ -11,6 +11,7 @@ document.querySelector("#tipojugada1").innerHTML='<p>'+"A JUGAR"+'</p>'
 
 const jugar=()=>{
   if(seguir===true&&total!==0){
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="sonidoDados2.mp3" type="audio/mpeg">'+'</audio>'
   let n = Math.floor(Math.random() * 6 + 1);
 
   let n2 =  Math.floor(Math.random() * 6 + 1);
@@ -171,6 +172,8 @@ switch(n5){
 
   if (full && poker == false && generala == false) {
     total = total + fulll;
+    
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="sonidoPremio.mp3" type="audio/mpeg">'+'</audio>'
     document.querySelector("#tipojugada1").innerHTML='<p>'+"HICISTE FULL"+'</p>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`FULL | ${fulll}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","full");
@@ -181,6 +184,7 @@ switch(n5){
   }
   if (poker && generala == false) {
     total = total + pokerr;
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="premioMayor.mp3" type="audio/mpeg">'+'</audio>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`POKER | ${pokerr}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","poker")
     document.querySelector("#tablero").classList.replace("full","poker")
@@ -191,6 +195,7 @@ switch(n5){
   }
   if (generala) {
     total = total + gene;
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="premioMayor.mp3" type="audio/mpeg">'+'</audio>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`GENERALA | ${gene}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","generala")
     document.querySelector("#tablero").classList.replace("full","generala")
@@ -201,6 +206,7 @@ switch(n5){
   }
   if (escalera && full == false && poker == false && generala == false) {
     total = total + esca;
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="sonidoPremio.mp3" type="audio/mpeg">'+'</audio>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`ESCALERA | ${esca}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","escalera")
     document.querySelector("#tablero").classList.replace("full","escalera")
@@ -211,6 +217,7 @@ switch(n5){
   }
   if (full == false && poker == false && generala == false && escalera == false) {
     total = total - na;
+    
     document.querySelector("#tipoJugada").innerHTML='<p>'+`NADA | -${na}`+'</p>'
     document.querySelector("#tablero").classList.replace("full","dados")
     document.querySelector("#tablero").classList.replace("escalera","dados")
@@ -220,9 +227,10 @@ switch(n5){
     //alert("\nNada -" + na + "\n");
     if(total===0){
       seguir=false;
+      document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="gameover.mp3" type="audio/mpeg">'+'</audio>'
       document.querySelector("#mensaje").innerHTML='<p>'+`FIN DEL JUEGO `+'</p>'
       document.querySelector("#denuevo").innerHTML='<button style="width:110px !important;font-size:18px !important" onclick="otravez()">'+"Jugar de nuevo"+'</button>'
-      
+      document.querySelector("body").classList.add("perder")
     }
   }
   
@@ -239,6 +247,7 @@ const otravez=()=>{
   document.querySelector("#tipoJugada").innerHTML=""
   document.querySelector("#subtotal").innerHTML=""
   document.querySelector("#tipojugada1").innerHTML='<p>'+"A JUGAR"+'</p>'
+  document.querySelector("body").classList.replace("perder","body")
   seguir=true;
   total=500;
  
