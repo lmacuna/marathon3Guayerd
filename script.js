@@ -1,9 +1,9 @@
 let seguir=true;
 let total = 500;
 let fulll = 200;
-let pokerr = 300;
+let pokerr = 800;
 let esca = 500;
-let gene = 700;
+let gene = 1000;
 let na = 100;
 console.log("Inicial: " + total);
 document.querySelector("#inicio").innerHTML='<p style="font-family:cursive;font-weight:bold;font-size:25px;margin-top:0px;color:whitesmoke">'+`Inicial | ${total}`+'</p>'
