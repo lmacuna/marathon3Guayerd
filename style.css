@@ -1,5 +1,5 @@
 .dados{
-    width: 100%;
+    width: 750px;
     height: 250px !important;
     /* background: sandybrown; */
     background: black;
@@ -7,40 +7,45 @@
     text-align: center;
     margin: auto;
     margin-bottom: 0%;
+    border-radius: 25px;
   
     
 }
 .full{
-    width: 100%;
+    width: 750px;
     height: 250px;
     background: darkcyan;
     padding: 60px !important;
     text-align: center;
     margin: auto;
+    border-radius: 25px;
 }
 .escalera{
-    width: 100%;
+    width: 750px;
     height: 250px;
     background: orangered;
     padding: 60px !important;
     text-align: center;
     margin: auto;
+    border-radius: 25px;
 }
 .poker{
-    width: 100%;
+    width: 750px;
     height: 250px;
     background: darkred;
     padding: 60px !important;
     text-align: center;
     margin: auto;
+    border-radius: 25px;
 }
 .generala{
-    width: 100%;
+    width: 750px;
     height: 250px;
     background: green;
     padding: 60px !important;
     text-align: center;
     margin: auto; 
+    border-radius: 25px;
 }
 .premio{
     font-size: 35px;
