@@ -206,7 +206,7 @@ switch(n5){
   }
   if (escalera && full == false && poker == false && generala == false) {
     total = total + esca;
-    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="sonidoPremio.mp3" type="audio/mpeg">'+'</audio>'
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="premioMayor.mp3" type="audio/mpeg">'+'</audio>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`ESCALERA | ${esca}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","escalera")
     document.querySelector("#tablero").classList.replace("full","escalera")
