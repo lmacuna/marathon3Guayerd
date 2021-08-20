@@ -15,6 +15,9 @@ const sonido=()=>{
   }
 
 }
+const silencio =()=>{
+  document.querySelector("#cortina").innerHTML='<audio muted="muted">'+'<source src="" type="audio/mpeg">'+'</audio>'
+}
 const jugar=()=>{
   if(seguir===true&&total!==0){
     document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="sonidoDados2.mp3" type="audio/mpeg">'+'</audio>'
@@ -201,7 +204,7 @@ switch(n5){
   }
   if (generala) {
     total = total + gene;
-    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="premioMayor.mp3" type="audio/mpeg">'+'</audio>'
+    document.querySelector("#sonido").innerHTML='<audio autoplay>'+'<source src="generala.mp3" type="audio/mpeg">'+'</audio>'
     document.querySelector("#tipoJugada").innerHTML='<p>'+`GENERALA | ${gene}`+'</p>'
     document.querySelector("#tablero").classList.replace("dados","generala")
     document.querySelector("#tablero").classList.replace("full","generala")
