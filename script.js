@@ -7,7 +7,7 @@ let gene = 1000;
 let na = 100;
 console.log("Inicial: " + total);
 
-document.querySelector("#inicio").innerHTML='<p style="font-family:cursive;font-weight:bold;font-size:25px;margin-top:0px;color:whitesmoke">'+`Inicial | ${total}`+'</p>'
+document.querySelector("#inicio").innerHTML='<p style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-weight:bold;font-size:25px;margin-top:0px;color:whitesmoke">'+`Inicial | ${total}`+'</p>'
 document.querySelector("#tipojugada1").innerHTML='<p>'+"A JUGAR"+'</p>'
 const sonido=()=>{
   if(total!==0&&seguir===true){
