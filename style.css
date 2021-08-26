@@ -49,7 +49,7 @@
 }
 .premio{
     font-size: 35px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
 }
 .dado{
@@ -57,12 +57,12 @@
     margin: 20px;
     font-size: 20px;
     font-weight: bold;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1{
     font-size: 30px;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
     margin-top: 0%;
     text-align: center;
@@ -78,14 +78,14 @@ button:active{
     font-weight: bold;
     border-radius: 11px;
     border: none;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 button:hover{
     
     background: #ccc;
     color: grey;
     font-weight: bold;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80px;
     height: 50px;
     font-size: 20px;
@@ -96,7 +96,7 @@ button{
     background: rgb(110, 110, 212);
     color: whitesmoke;
     font-weight: bold;
-    font-family: cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 80px;
     height: 50px;
     font-size: 20px;
